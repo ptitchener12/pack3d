@@ -46,7 +46,8 @@ func timed(name string) func() {
 
 func main() {
 	const S = 100
-	const P = 2.5 
+	const P = 1  
+	// P appears to be padding, on the "radius" (actual padding is 2x P) 
 
 	var items []binpack.Item
 	var meshes []*fauxgl.Mesh
